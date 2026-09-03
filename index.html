@@ -633,13 +633,13 @@
     </div>
     <form class="contact-form" onsubmit="handleSubmit(event)">
       <div class="form-row">
-        <div class="form-group"><label>First Name</label><input type="text" placeholder="Jean" required/></div>
-        <div class="form-group"><label>Last Name</label><input type="text" placeholder="Dupont" required/></div>
+        <div class="form-group"><label>First Name</label><input type="text" name="first_name" placeholder="Jean" required/></div>
+        <div class="form-group"><label>Last Name</label><input type="text" name="last_name" placeholder="Dupont" required/></div>
       </div>
-      <div class="form-group"><label>IU Email</label><input type="email" placeholder="jdupont@iu.edu" required/></div>
+      <div class="form-group"><label>IU Email</label><input type="email" name="email" placeholder="jdupont@iu.edu" required/></div>
       <div class="form-group">
         <label>Reason for Contact</label>
-        <select>
+        <select name="reason">
           <option value="">Select one…</option>
           <option>I want to join the club</option>
           <option>Partnership / sponsorship inquiry</option>
@@ -647,7 +647,7 @@
           <option>General question</option>
         </select>
       </div>
-      <div class="form-group"><label>Message</label><textarea rows="5" placeholder="Write your message here…"></textarea></div>
+      <div class="form-group"><label>Message</label><textarea rows="5" name="message" placeholder="Write your message here…"></textarea></div>
       <button type="submit" class="btn-submit">Send Message</button>
     </form>
   </div>
